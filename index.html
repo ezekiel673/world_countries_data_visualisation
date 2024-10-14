@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="containers">
+        <h1>World Countries Data</h1>
+        <p>Currently, we have 250 countries</p>
+		<div class="sub-head">
+			 <!-- Buttons to toggle between Population and Languages -->
+			<div class="button-container">
+				<button id="populationBtn" class="active">Population</button>
+				<button id="languagesBtn">Languages</button>
+			</div>
+			<!-- Chart title -->
+			<h3 id="chart-title">10 Most Populated Countries in the World</h3>
+		</div>
+        <!-- Bar chart container -->
+        <div id="bar-chart" class="bar-chart"></div>
+    </div>
+
+    <!-- Including JS files -->
+    <script src="./scripts/countries_data.js"></script>
+    <script src="./dist/index.js"></script>
+</body>
+</html>
+

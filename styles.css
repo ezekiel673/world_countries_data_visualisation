@@ -1,0 +1,167 @@
+/* Body and container styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #f7b71d;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.sub-head {
+    padding-top: 40px;
+    border-top: 1px solid rgb(211, 207, 207);
+    border-bottom: 1px solid rgb(211, 207, 207);
+    background-color: white;
+    width: 100vw; /* Set width to the full viewport */
+    margin-left: calc(-50vw + 50%); /* Ensure it aligns perfectly with the viewport */
+}
+
+
+
+/* Button styling */
+.button-container {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: none;
+    background-color: #f7b71d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button.active {
+    background-color: #e67e22;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+/* Chart title styling */
+#chart-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Bar chart and bar styling */
+.bar-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bar-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 150px 100% 80px; /* Align label, bar, and value */
+    grid-gap: 30px;
+}
+
+.bar-label {
+    width: 150px;
+    text-align: left;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.bar {
+    background-color: #f7b71d;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    width: auto; /* Allow bars to resize dynamically */
+}
+
+.bar:hover {
+    background-color: #ffa500;
+}
+
+.bar-value {
+    font-weight: bold;
+    margin-left: 15px; /* Space between bar and value */
+    min-width: 80px; /* Ensure all values have consistent width */
+    text-align: left;
+    display: inline-block; /* Ensure value stays beside the bar */
+}
+
+
+@media screen and (max-width: 480px) {
+    /* Further reduce padding and font sizes for very small screens */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .sub-head {
+        padding-top: 20px;
+    }
+
+    /* Adjust the bar chart grid layout for mobile */
+    .bar-container {
+        grid-template-columns: 70px 1fr 40px;
+        grid-gap: 5px;
+    }
+    .bar-label {
+        width: 70px;
+        font-size: 0.75rem;
+        margin-right: 10px;
+    }
+    /* Adjust bar height for small screens */
+    .bar {
+        height: 20px;
+    }
+
+
+    .bar-value {
+        font-size: 0.75rem;
+        margin-left: 20px; 
+        min-width: 50px; 
+    }
+
+    /* Button styling */
+    button {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+}
+
+
