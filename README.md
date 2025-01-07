@@ -19,7 +19,7 @@ The **World Countries Data Visualization App** is a data-driven application that
 Check out the live version of the app here: [Live Site](https://world-countries-data-visualisation-kgl4awegl.vercel.app/)
 
 ## Repository
-Access the project repository here: [GitHub Repository](https://github.com/Ezekiel-Great/world_countries_data_visualisation)
+Access the project repository here: [GitHub Repository](https://github.com/ezekiel673/world_countries_data_visualisation)
 
 ## Screenshots
 ### 1. Main View: 10 Most Populated Countries
